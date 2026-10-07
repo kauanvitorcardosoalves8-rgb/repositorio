@@ -1,1 +1,65 @@
 
+======================================================================
+CENÁRIO 1: Aluno Faixa A com nota alta e pontualidade ativa ('S')
+======================================================================
+Entrada:
+- Nome: Ana Maria Silva
+- Idade: 19
+- Renda: 1800.00
+- Média: 8.80
+- Pontualidade: S
+
+Saída:
+========================================
+    SISTEMA DE AVALIACAO DE DESCONTO    
+========================================
+Aluno         : Ana Maria Silva
+Faixa Social  : Faixa A
+Media         : 8.80
+Desconto Base : 50.0%
+Bonus Pontual : 5.0%
+----------------------------------------
+Desconto Total: 55.0%
+Status        : APROVADO PARA BOLSA
+========================================
+
+======================================================================
+CENÁRIO 2: Aluno Faixa B com nota moderada e pontualidade 'N'
+======================================================================
+Entrada:
+- Nome: Carlos Eduardo Lima
+- Idade: 22
+- Renda: 3500.00
+- Média: 7.50
+- Pontualidade: N
+
+Saída:
+========================================
+    SISTEMA DE AVALIACAO DE DESCONTO    
+========================================
+Aluno         : Carlos Eduardo Lima
+Faixa Social  : Faixa B
+Media         : 7.50
+Desconto Base : 10.0%
+Bonus Pontual : 0.0%
+----------------------------------------
+Desconto Total: 10.0%
+Status        : APROVADO PARA BOLSA
+========================================
+
+======================================================================
+CENÁRIO 3: Dados Inválidos (Idade menor que 16 anos)
+======================================================================
+Entrada:
+- Nome: Lucas Santos
+- Idade: 15
+- Renda: 1500.00
+- Média: 9.00
+- Pontualidade: S
+
+Saída:
+========================================
+ERRO: Dados invalidos para analise.
+- Idade minima permitida: 16 anos.
+Analise encerrada.
+========================================
